@@ -12,6 +12,14 @@ server.listen(8005, () => {
 
 
 
+
+
+
+
+
+
+
+
 // Character.list().then((res)=> console.log(res[0]));
 // Film.list().then((res)=> console.log(res[0]));
 // Planet.list().then((res)=> console.log(res[0]));

@@ -6,6 +6,7 @@ const router = Router();
 
 router.get("/", controllers.getFilms)
 router.get("/:id", controllers.getOneFilm)
+router.delete("/:id", controllers.deleteFilm)
 router.post("/", controllers.createFilm)
 // router.post("/", middlewares.filmValidation, controllers.createFilm)
 
