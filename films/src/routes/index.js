@@ -5,7 +5,8 @@ const middlewares = require("../middlewares");
 const router = Router();
 
 router.get("/", controllers.getFilms)
-
-router.post("/", middlewares.filmValidation, controllers.createFilm)
+router.get("/:id", controllers.getOneFilm)
+router.post("/", controllers.createFilm)
+// router.post("/", middlewares.filmValidation, controllers.createFilm)
 
 module.exports = router;

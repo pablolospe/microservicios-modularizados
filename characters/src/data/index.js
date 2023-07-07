@@ -8,8 +8,6 @@ module.exports = {
   },
   
   get: async (id) => {
-    // const {id} = req.params
-    console.log(id);
     const result = await axios.get(`http://database:8005/Character/${id}`)
     return result.data;
   },
@@ -17,6 +15,5 @@ module.exports = {
   create:async(data)=>{
     const result = await axios.post("http://database:8005/Character", data);
     return result.data;
-    // throw Error("Hay un error en la creacion del personaje")
   }
 };
