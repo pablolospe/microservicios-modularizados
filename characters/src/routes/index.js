@@ -8,6 +8,8 @@ router.get("/", controllers.getCharacters)
 
 router.get("/:id", controllers.getCharacter)
 
+router.delete("/:id", controllers.deleteCharacter)
+
 router.post("/", controllers.createCharacter)
 
 module.exports = router;

@@ -26,6 +26,16 @@ router.get("/:model/:id", validateModel, async (req, res)=>{
     }
 })
 
+router.delete("/:model/:id", validateModel, async (req, res)=>{
+    try {
+        const { model, id } = req.params;
+        const response = await store[model].deleteOne({_id: id});
+        res.status(200).json(response);
+    } catch (error) {
+        res.status(403).send(error.message)
+    }
+})
+
 router.post("/:model", validateModel, async (req, res)=>{
     try {
         const { model } = req.params;

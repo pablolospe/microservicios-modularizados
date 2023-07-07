@@ -7,6 +7,11 @@ const { Character, Film, Planet } = require('./src/database');
 server.listen(8005, () => {
   console.log(`Database service on port ${PORT}`);
 });
+
+
+
+
+
 // Character.list().then((res)=> console.log(res[0]));
 // Film.list().then((res)=> console.log(res[0]));
 // Planet.list().then((res)=> console.log(res[0]));

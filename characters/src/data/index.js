@@ -11,6 +11,11 @@ module.exports = {
     const result = await axios.get(`http://database:8005/Character/${id}`)
     return result.data;
   },
+  
+  delete: async (id) => {
+    const result = await axios.delete(`http://database:8005/Character/${id}`)
+    return result.data;
+  },
 
   create:async(data)=>{
     const result = await axios.post("http://database:8005/Character", data);
