@@ -8,5 +8,6 @@ router.get("/", controllers.getPlanets)
 router.get("/:id", controllers.getOnePlanet)
 router.delete("/:id", controllers.deletePlanet)
 router.post("/", middlewares.planetValidation, controllers.createPlanet)
+router.put("/:id", controllers.updatePlanet)
 
 module.exports = router;
