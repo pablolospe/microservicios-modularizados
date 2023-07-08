@@ -5,4 +5,5 @@ module.exports = {
     getOneFilm: catchedAsync(require("./getOneFilm")),
     deleteFilm: catchedAsync(require("./deleteFilm")),
     createFilm: catchedAsync(require("./createFilm")),
+    updateFilm: catchedAsync(require("./updateFilm")),
 }
