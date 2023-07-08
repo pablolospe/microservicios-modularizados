@@ -20,5 +20,10 @@ module.exports = {
   create:async(data)=>{
     const result = await axios.post("http://database:8005/Character", data);
     return result.data;
-  }
+  },
+
+  update:async(id, data)=>{
+    const result = await axios.put(`http://database:8005/Character/${id}`, data);
+    return result.data;
+  },
 };

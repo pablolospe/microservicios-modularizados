@@ -12,4 +12,6 @@ router.delete("/:id", controllers.deleteCharacter)
 
 router.post("/", controllers.createCharacter)
 
+router.put("/:id", controllers.updateCharacter)
+
 module.exports = router;

@@ -5,4 +5,5 @@ module.exports={
     getCharacter: catchedAsync(require("./getCharacter")),
     deleteCharacter: catchedAsync(require("./deleteCharacter")),
     createCharacter: catchedAsync(require("./createCharacter")),
+    updateCharacter: catchedAsync(require("./updateCharacter")),
 }
